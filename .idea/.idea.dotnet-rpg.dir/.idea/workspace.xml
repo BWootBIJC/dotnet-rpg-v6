@@ -8,15 +8,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="" />
+    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AutoMapperProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dtos/Character/AddCharacterDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dtos/Character/UpdateCharacterDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/ServiceResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ICharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ICharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-rpg.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-rpg.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/AutoMapperProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/WeatherForecastController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/CharacterService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,13 +115,27 @@
       <updated>1658455871635</updated>
       <workItem from="1658455874424" duration="539000" />
       <workItem from="1658456492637" duration="1179000" />
+      <workItem from="1658625357319" duration="14000" />
+      <workItem from="1666832575929" duration="10206000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

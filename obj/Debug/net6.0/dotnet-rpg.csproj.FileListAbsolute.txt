@@ -25,3 +25,5 @@ C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rp
 C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rpg\obj\Debug\net6.0\dotnet-rpg.pdb
 C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rpg\obj\Debug\net6.0\dotnet-rpg.genruntimeconfig.cache
 C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rpg\obj\Debug\net6.0\ref\dotnet-rpg.dll
+C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rpg\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\jesus\Dropbox\ProgrammingProjects\UdemyCourses\.NET6-.NETCORE\dotnet-rpg\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

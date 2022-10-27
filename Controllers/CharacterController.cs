@@ -1,4 +1,5 @@
-﻿using dotnet_rpg.Services;
+﻿using dotnet_rpg.Dtos.Character;
+using dotnet_rpg.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Controllers;
@@ -8,6 +9,7 @@ namespace dotnet_rpg.Controllers;
 public class CharacterController : ControllerBase
 {
     private readonly ICharacterService _characterService;
+
     public CharacterController(ICharacterService characterService)
     {
         _characterService = characterService;
@@ -15,22 +17,34 @@ public class CharacterController : ControllerBase
 
     [HttpGet]
     [Route("GetAll")]
-    public ActionResult<List<Character>> Get()
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> Get()
     {
-        return Ok(_characterService.GetAllCharacters());
+        return Ok(await _characterService.GetAllCharacters());
     }
-    
+
     [HttpGet]
     [Route("{id}")]
-    public ActionResult<Character> GetSingle(int id)
+    public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> GetSingle(int id)
     {
-        return Ok(_characterService.GetCharacterById(id));
+        return Ok(await _characterService.GetCharacterById(id));
     }
 
     [HttpPost]
-    [Route("newCharacter")]
-    public ActionResult<List<Character>> AddCharacter(Character newCharacter)
+    public async Task<ActionResult<ServiceResponse<List<Character>>>> AddCharacter(AddCharacterDto newCharacter)
     {
-        return Ok(_characterService.AddCharacter(newCharacter));
+        return Ok(await _characterService.AddCharacter(newCharacter));
+    }
+
+    [HttpPut]
+    public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> UpdateCharacter(
+        UpdateCharacterDto updatedCharacter)
+    {
+        var response = await _characterService.UpdateCharacter(updatedCharacter);
+        if (response.Data == null)
+        {
+            return NotFound(response);
+        }
+
+        return Ok(response);
     }
 }

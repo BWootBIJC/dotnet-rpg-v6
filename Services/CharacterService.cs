@@ -1,4 +1,7 @@
-﻿namespace dotnet_rpg.Services;
+﻿using AutoMapper;
+using dotnet_rpg.Dtos.Character;
+
+namespace dotnet_rpg.Services;
 
 public class CharacterService : ICharacterService
 {
@@ -7,19 +10,62 @@ public class CharacterService : ICharacterService
         new Character(),
         new Character{ Id = 1, Name = "Sam" }
     };
-    public List<Character> GetAllCharacters()
+
+    private readonly IMapper _mapper;
+    public CharacterService(IMapper mapper)
     {
-        return characters;
+        _mapper = mapper;
     }
 
-    public Character GetCharacterById(int id)
+    public Task<ServiceResponse<List<GetCharacterDto>>> AddCharacter(AddCharacterDto newCharacter)
     {
-        return characters.FirstOrDefault(c => c.Id == id)!;
+        var serviceResponse = new ServiceResponse<List<GetCharacterDto>>();
+        Character character = _mapper.Map<Character>(newCharacter);
+        character.Id = characters.Max(x => x.Id) + 1;
+        characters.Add(character);
+        serviceResponse.Data = characters.Select(x => _mapper.Map<GetCharacterDto>(x)).ToList();
+        return Task.FromResult(serviceResponse);
     }
 
-    public List<Character> AddCharacter(Character newCharacter)
+    public async Task<ServiceResponse<GetCharacterDto>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
     {
-        characters.Add(newCharacter);
-        return characters;
+        ServiceResponse<GetCharacterDto> response = new ServiceResponse<GetCharacterDto>();
+        try
+        {
+            Character character = characters.FirstOrDefault(x => x.Id == updatedCharacter.Id);
+            character.Name = updatedCharacter.Name;
+            character.HitPoints = updatedCharacter.HitPoints;
+            character.Strength = updatedCharacter.Strength;
+            character.Defense = updatedCharacter.Defense;
+            character.Intelligence = updatedCharacter.Intelligence;
+            character.Class = updatedCharacter.Class;
+            response.Data = _mapper.Map<GetCharacterDto>(character);
+            return response;
+        }
+        catch (Exception e)
+        {
+            response.Success = false;
+            response.Message = e.Message;
+        }
+
+        return response;
+
+    }
+
+    public Task<ServiceResponse<List<GetCharacterDto>>> GetAllCharacters()
+    {
+        
+        return Task.FromResult(new ServiceResponse<List<GetCharacterDto>>
+        {
+            Data = characters.Select(x => _mapper.Map<GetCharacterDto>(x)).ToList()
+        });
+    }
+
+    public Task<ServiceResponse<GetCharacterDto>> GetCharacterById(int id)
+    {
+        var serviceResponse = new ServiceResponse<GetCharacterDto>();
+        var character = characters.FirstOrDefault(c => c.Id == id);
+        serviceResponse.Data = _mapper.Map<GetCharacterDto>(character);
+        return Task.FromResult(serviceResponse);
     }
 }
