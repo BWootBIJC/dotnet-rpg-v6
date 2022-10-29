@@ -9,27 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AutoMapperProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dtos/Character/AddCharacterDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dtos/Character/UpdateCharacterDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/ServiceResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DbContext/RpgContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoMapperProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CharacterService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/ICharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ICharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dotnet-rpg.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-rpg.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" afterDir="false" />
@@ -38,6 +37,7 @@
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +116,9 @@
       <workItem from="1658455874424" duration="539000" />
       <workItem from="1658456492637" duration="1179000" />
       <workItem from="1658625357319" duration="14000" />
-      <workItem from="1666832575929" duration="10206000" />
+      <workItem from="1666832575929" duration="10542000" />
+      <workItem from="1666927045357" duration="1557000" />
+      <workItem from="1667061235665" duration="1766000" />
     </task>
     <servers />
   </component>
