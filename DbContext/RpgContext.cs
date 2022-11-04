@@ -7,8 +7,10 @@ namespace dotnet_rpg
     {
         public RpgContext(DbContextOptions<RpgContext> options) : base(options)
         {
-            
+
         }
+
         public DbSet<Character> Characters { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
