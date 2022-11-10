@@ -1,14 +1,19 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace dotnet_rpg.Repos;
 
 public class AuthRepository : IAuthRepository
 {
     private readonly RpgContext _dbContext;
+    private readonly IConfiguration _configuration;
     
-    public AuthRepository(RpgContext dbContext)
+    public AuthRepository(RpgContext dbContext, IConfiguration configuration)
     {
         _dbContext = dbContext;
+        _configuration = configuration;
     }
     public async Task<ServiceResponse<int>> Register(User user, string password)
     {
@@ -44,6 +49,31 @@ public class AuthRepository : IAuthRepository
         return await _dbContext.Users.AnyAsync(x => x.Username.ToLower() == username.ToLower());
     }
 
+    private string CreateToken(User user)
+    {
+        List<Claim> claims = new List<Claim>()
+        {
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Username)
+        };
+
+        SymmetricSecurityKey key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:Token").Value));
+
+        SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+        SecurityTokenDescriptor tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(claims),
+            Expires = DateTime.Now.AddDays(1),
+            SigningCredentials = creds
+        };
+
+        JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+        SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
+
+        return tokenHandler.WriteToken(token);
+    }
+
     public async Task<ServiceResponse<string>> Login(string username, string password)
     {
         var response = new ServiceResponse<string>();
@@ -64,7 +94,7 @@ public class AuthRepository : IAuthRepository
         {
             response.Success = true;
             response.Message = "Successfully authenticated";
-            response.Data = user.Id.ToString();
+            response.Data = CreateToken(user);
         }
 
         return response;
