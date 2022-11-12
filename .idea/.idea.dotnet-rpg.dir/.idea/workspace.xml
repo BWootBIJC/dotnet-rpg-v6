@@ -8,38 +8,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="">
+    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="Push everything">
+      <change afterPath="$PROJECT_DIR$/Dtos/Weapon/AddWeaponDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Weapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/IWeaponService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/WeaponService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbContext/RpgContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DbContext/RpgContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Character.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CharacterService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/ICharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ICharacterService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.OpenApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotnet-rpg.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-rpg.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/dotnet-rpg.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/dotnet-rpg.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +32,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3839fc8fee5ae62538a4469ed86bbba1ccd15d4e0da63bba779abe1719da3/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AutoMapperProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Controllers/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Character.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Queries/UserQueries.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Repos/IAuthRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Services/CharacterService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Services/CharacterService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Services/ICharacterService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/obj/Debug/net6.0/dotnet-rpg.MvcApplicationPartsAssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -126,7 +118,7 @@
       <workItem from="1667524033395" duration="8636000" />
       <workItem from="1667868254387" duration="3958000" />
       <workItem from="1668049027335" duration="4596000" />
-      <workItem from="1668269594130" duration="1604000" />
+      <workItem from="1668269594130" duration="5970000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication controller">
       <created>1667879289816</created>
@@ -142,7 +134,49 @@
       <option name="project" value="LOCAL" />
       <updated>1668053485880</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finish authentication section">
+      <created>1668271664274</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271664275</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ignore cache files in git">
+      <created>1668271716425</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271716425</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Delete cache files">
+      <created>1668271800620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271800620</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit workspace">
+      <created>1668271816887</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271816887</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add dll files to git ignore">
+      <created>1668271875234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271875234</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Push everything">
+      <created>1668271886429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668271886429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +199,12 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add authentication controller" />
     <MESSAGE value="Add User domain object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add User domain object" />
+    <MESSAGE value="Finish authentication section" />
+    <MESSAGE value="Ignore cache files in git" />
+    <MESSAGE value="Delete cache files" />
+    <MESSAGE value="Commit workspace" />
+    <MESSAGE value="Add dll files to git ignore" />
+    <MESSAGE value="Push everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push everything" />
   </component>
 </project>
