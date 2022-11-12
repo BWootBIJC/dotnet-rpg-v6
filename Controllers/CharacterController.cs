@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using DefaultNamespace.Dtos.Skills;
 using dotnet_rpg.Dtos.Character;
 using dotnet_rpg.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -61,5 +62,12 @@ public class CharacterController : ControllerBase
         }
 
         return Ok(response);
+    }
+
+    [HttpPost("Skill")]
+    public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> AddCharacterSkill(
+        AddCharacterSkillDto characterSkillDto)
+    {
+        return Ok(await _characterService.AddCharacterSkill(characterSkillDto));
     }
 }

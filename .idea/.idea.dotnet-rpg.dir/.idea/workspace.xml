@@ -8,15 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="Add weapon migration, Add controller, service, and model for weapon">
-      <change afterPath="$PROJECT_DIR$/Dtos/Weapon/GetWeaponDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Skill.cs" afterDir="false" />
+    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="Add migration files">
+      <change afterPath="$PROJECT_DIR$/Dtos/Character/AddCharacterSkillDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dtos/Skill/GetSkillDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DbContext/RpgContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DbContext/RpgContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ICharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ICharacterService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
     </list>
@@ -29,6 +31,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3839fc8fee5ae62538a4469ed86bbba1ccd15d4e0da63bba779abe1719da3/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/AutoMapperProfile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AutoMapperProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Controllers/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Character.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,6 +42,7 @@
     <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Services/CharacterService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/Services/ICharacterService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/net6.0/dotnet-rpg.MvcApplicationPartsAssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jesus/Dropbox/ProgrammingProjects/UdemyCourses/.NET6-.NETCORE/dotnet-rpg/obj/Debug/net6.0/dotnet-rpg.MvcApplicationPartsAssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -112,7 +116,7 @@
       <workItem from="1667524033395" duration="8636000" />
       <workItem from="1667868254387" duration="3958000" />
       <workItem from="1668049027335" duration="4596000" />
-      <workItem from="1668269594130" duration="7239000" />
+      <workItem from="1668269594130" duration="9800000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication controller">
       <created>1667879289816</created>
@@ -177,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668284276536</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add skill migration">
+      <created>1668285421508</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668285421508</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add migration files">
+      <created>1668285444777</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668285444777</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +225,8 @@
     <MESSAGE value="Add dll files to git ignore" />
     <MESSAGE value="Push everything" />
     <MESSAGE value="Add weapon migration, Add controller, service, and model for weapon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add weapon migration, Add controller, service, and model for weapon" />
+    <MESSAGE value="Add skill migration" />
+    <MESSAGE value="Add migration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add migration files" />
   </component>
 </project>
