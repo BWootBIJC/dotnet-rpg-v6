@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Collections;
+using AutoMapper;
 using dotnet_rpg.Dtos.Character;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,12 +18,21 @@ public class CharacterService : ICharacterService
     public async Task<ServiceResponse<List<GetCharacterDto>>> AddCharacter(AddCharacterDto newCharacter)
     {
         var serviceResponse = new ServiceResponse<List<GetCharacterDto>>();
-        Character character = _mapper.Map<Character>(newCharacter);
-        _dbContext.Characters.Add(character);
-        await _dbContext.SaveChangesAsync();
-        serviceResponse.Data = await _dbContext.Characters
-            .Select(x => _mapper.Map<GetCharacterDto>(x))
-            .ToListAsync();
+        try
+        {
+            Character character = _mapper.Map<Character>(newCharacter);
+            _dbContext.Characters.Add(character);
+            await _dbContext.SaveChangesAsync();
+            serviceResponse.Data = await _dbContext.Characters
+                .Select(x => _mapper.Map<GetCharacterDto>(x))
+                .ToListAsync();
+            serviceResponse.Success = true;
+        }
+        catch (Exception e)
+        {
+            serviceResponse.Success = false;
+            serviceResponse.Message = e.Message;
+        }
         return serviceResponse;
     }
 
@@ -37,6 +47,7 @@ public class CharacterService : ICharacterService
             
             _mapper.Map(updatedCharacter, character);
             response.Data = _mapper.Map<GetCharacterDto>(character);
+            response.Success = true;
         }
         catch (Exception e)
         {
@@ -48,19 +59,42 @@ public class CharacterService : ICharacterService
 
     }
 
-    public async Task<ServiceResponse<List<GetCharacterDto>>> GetAllCharacters()
+    public async Task<ServiceResponse<List<GetCharacterDto>>> GetAllCharacters(int userId)
     {
         var response = new ServiceResponse<List<GetCharacterDto>>();
-        var dbCharacters = await _dbContext.Characters.ToListAsync();
-        response.Data = dbCharacters.Select(x => _mapper.Map<GetCharacterDto>(x)).ToList();
+
+        try
+        {
+            var dbCharacters = await _dbContext.Characters
+                .Where(x => x.User.Id == userId)
+                .ToListAsync();
+            response.Data = dbCharacters.Select(x => _mapper.Map<GetCharacterDto>(x)).ToList();
+            response.Success = true;
+        }
+        catch (Exception e)
+        {
+            response.Success = false;
+            response.Message = e.Message;
+        }
         return response;
+
     }
 
     public async Task<ServiceResponse<GetCharacterDto>> GetCharacterById(int id)
     {
         var serviceResponse = new ServiceResponse<GetCharacterDto>();
-        var dbCharacter = await _dbContext.Characters.FirstOrDefaultAsync(c => c.Id == id);
-        serviceResponse.Data = _mapper.Map<GetCharacterDto>(dbCharacter);
+
+        try
+        {
+            var dbCharacter = await _dbContext.Characters.FirstOrDefaultAsync(c => c.Id == id);
+            serviceResponse.Data = _mapper.Map<GetCharacterDto>(dbCharacter);
+            serviceResponse.Success = true;
+        }
+        catch (Exception e)
+        {
+            serviceResponse.Message = e.Message;
+            serviceResponse.Success = false;
+        }
         return serviceResponse;
     }
 
