@@ -8,23 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="Push everything">
-      <change afterPath="$PROJECT_DIR$/Dtos/Weapon/AddWeaponDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Weapon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IWeaponService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/WeaponService.cs" afterDir="false" />
+    <list default="true" id="6f7384bc-6725-4c59-90e0-703dca6f9990" name="Changes" comment="Add weapon migration, Add controller, service, and model for weapon">
+      <change afterPath="$PROJECT_DIR$/Dtos/Weapon/GetWeaponDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Skill.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AutoMapperProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/WeaponController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DbContext/RpgContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DbContext/RpgContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/RpgContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dtos/Character/GetCharacterDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/CharacterService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/ICharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ICharacterService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-rpg.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/dotnet-rpg.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +112,7 @@
       <workItem from="1667524033395" duration="8636000" />
       <workItem from="1667868254387" duration="3958000" />
       <workItem from="1668049027335" duration="4596000" />
-      <workItem from="1668269594130" duration="5970000" />
+      <workItem from="1668269594130" duration="7239000" />
     </task>
     <task id="LOCAL-00001" summary="Add authentication controller">
       <created>1667879289816</created>
@@ -176,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668271886429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add weapon migration, Add controller, service, and model for weapon">
+      <created>1668284276536</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668284276536</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +206,7 @@
     <MESSAGE value="Commit workspace" />
     <MESSAGE value="Add dll files to git ignore" />
     <MESSAGE value="Push everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push everything" />
+    <MESSAGE value="Add weapon migration, Add controller, service, and model for weapon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add weapon migration, Add controller, service, and model for weapon" />
   </component>
 </project>
